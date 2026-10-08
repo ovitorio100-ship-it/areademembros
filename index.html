@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#153c70">
+  <title>Psicologia Visual — Biblioteca de Mapas</title>
+  <meta name="description" content="Biblioteca visual com 150 mapas mentais de Psicologia organizados em seis eixos.">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="catalog.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegação da biblioteca">
+      <a href="#inicio" class="brand" id="home-link"><span class="brand-icon">✦</span><span>psicologia<span class="brand-light">visual</span></span></a>
+      <div class="side-kicker">MINHA BIBLIOTECA</div>
+      <nav id="primary-nav" aria-label="Coleções"></nav>
+      <div class="sidebar-bottom"><span class="bottom-icon">◈</span><div><strong>Aprenda por conexões.</strong><small>Explore um mapa por vez.</small></div></div>
+    </aside>
+    <main id="inicio" class="content">
+      <header class="topline"><span id="breadcrumb">Biblioteca <b>/</b> Visão geral</span><span class="top-pill">✦ ACERVO VISUAL</span></header>
+      <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow">SEU ESPAÇO DE ESTUDO</p><h1 id="hero-title">A Psicologia fica mais clara quando você <em>vê as conexões.</em></h1><p id="hero-desc">Navegue pelos temas, encontre o conceito que procura e estude com mapas visuais feitos para facilitar a compreensão.</p><div class="hero-stats"><span><strong id="hero-count">150</strong> mapas visuais</span><span><strong>06</strong> eixos de estudo</span></div></div><div class="hero-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><div class="art-center">PSI</div><span class="art-node node-one">✳</span><span class="art-node node-two">◈</span><span class="art-node node-three">◎</span><span class="art-node node-four">✚</span></div></section>
+      <section class="collections" id="collections-section" aria-labelledby="collections-title"><div class="section-head"><div><p class="eyebrow">ESCOLHA UM CAMINHO</p><h2 id="collections-title">Explore por eixo</h2></div><span>6 coleções</span></div><div class="collection-grid" id="collection-grid"></div></section>
+      <section class="maps-section" id="mapas" aria-labelledby="maps-title"><div class="section-head"><div><p class="eyebrow">ACERVO COMPLETO</p><h2 id="maps-title">Todos os mapas</h2></div><span id="result-count">150 mapas</span></div><div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar conceito ou tema..." autocomplete="off" aria-label="Buscar mapas"></label><select id="axis-select" aria-label="Filtrar por eixo"><option value="all">Todos os eixos</option></select></div><div class="map-grid" id="map-grid"></div><div id="empty" class="empty" hidden><span>⌕</span><h3>Nenhum mapa encontrado</h3><p>Tente outra palavra ou escolha um eixo diferente.</p></div></section>
+      <footer>Psicologia Visual · Estude no seu ritmo.</footer>
+    </main>
+  </div>
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title"><div class="lightbox-panel"><div class="lightbox-head"><div><small id="lightbox-label"></small><h2 id="lightbox-title"></h2></div><div class="lightbox-actions"><a id="download" class="download" download>Baixar PNG ↓</a><button id="close" type="button" aria-label="Fechar imagem">×</button></div></div><div class="lightbox-stage"><button id="previous" class="step prev" aria-label="Mapa anterior">‹</button><img id="lightbox-image" alt=""><button id="next" class="step next" aria-label="Próximo mapa">›</button></div><div class="lightbox-foot"><span id="lightbox-position"></span><span>Use ← → para navegar · Esc para fechar</span></div></div></div>
+</body>
+</html>
